@@ -1,4 +1,6 @@
-﻿namespace ConsoleApp1
+﻿using System.ComponentModel.Design;
+
+namespace ConsoleApp1
 {
     internal class Program
     {
@@ -74,22 +76,20 @@
 
 
             //Assessment-Max
-            Console.WriteLine("Assessment-Max");
-            Console.WriteLine("==============");
-            Console.WriteLine("Please enter first number");
-            NumberEntry = int.Parse(Console.ReadLine());
-            Console.WriteLine("Please enter second number");
-            int NumberEntry2 = int.Parse(Console.ReadLine());
-            Console.WriteLine($"Max number is {Math.Max(NumberEntry, NumberEntry2)}");
-            // Or
-            int[] numberArray = new int[2];
-            Console.WriteLine("Please enter first number");
-            NumberEntry = int.Parse(Console.ReadLine());
-            Console.WriteLine("Please enter second number");
-            NumberEntry2 = int.Parse(Console.ReadLine());
-            numberArray[0] = NumberEntry;
-            numberArray[1] = NumberEntry2;
-            Console.WriteLine($"Max number is {numberArray.Max()}");
+            Console.WriteLine("Enter first number:");
+            int num1 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter second number:");
+            int num2 = int.Parse(Console.ReadLine());
+
+            if (num1 > num2)
+            {
+                Console.WriteLine("Max number is " + num1);
+            }
+            else
+            {
+                Console.WriteLine("Max number is " + num2);
+            }
 
 
             //Assessment-IsValid
@@ -140,6 +140,8 @@
                     break;
             }
             #endregion
+
+
         }
     }
 }
