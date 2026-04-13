@@ -1,4 +1,6 @@
 <Solution>
+  <Project Path="ATM_Banking_System/ATM_Banking_System.csproj" Id="4dcc6141-c483-483f-9788-0e27dae976f8" />
   <Project Path="ConsoleApp1/Session_2.csproj" />
   <Project Path="Session_3/Session_3.csproj" Id="faff4d14-406a-4e1f-948d-356ccbcd9423" />
+  <Project Path="Student_Grades_Tracker/Student_Grades_Tracker.csproj" Id="cc7ea9cb-5ff7-46df-af1c-53238f539123" />
 </Solution>
